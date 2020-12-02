@@ -1,0 +1,48 @@
+/*
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: radial-gradient(#fe718f 0%, #fe8183 42%, #ff9b73 87%);
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: 0;
+    background-color: #34df67;
+    height: 40px;
+    width: 120px;
+    border-radius: .97rem;
+}
+
+button:focus {
+    outline: none;
+    border: 2px solid white;
+    transform: scale(1.5);
+}
+*/
+
+
+/*for skypey app*/
+
+#root {
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
