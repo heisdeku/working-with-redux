@@ -4,7 +4,7 @@ import ButtonGroup from './Components/ButtonGroup'
 import UserCard from './Components/UserCard/UserCard'
 import {store} from './store';
 import BankApp from './Components/BankApp/Bank';
-import Skypey from './Components/skypey/App';
+import Skypey from './Containers/App';
 
 function App() {  
   return (
