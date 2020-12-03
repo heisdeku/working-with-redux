@@ -10,6 +10,7 @@ const ChatWindow = ({ activeUserId }) => {
   const activeUser = state.contacts[activeUserId]
   const activeMessages = state.messages[activeUserId];
   const convertedActiveMessages = Object.values(activeMessages)
+  const { typing } = state;
   return (
     <div className="ChatWindow">
       <Header 
@@ -18,7 +19,7 @@ const ChatWindow = ({ activeUserId }) => {
       <Chats 
         messages={convertedActiveMessages}
       />
-      <MessageInput />  
+      <MessageInput value={typing} />  
     </div>
   )
 }
