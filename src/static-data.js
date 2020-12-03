@@ -85,8 +85,7 @@ export function generateUser() {
 
 export function getMessages() {
   let messages = {}  
-  for (let contact in contacts) {  
-    console.log(contact)  
+  for (let contact in contacts) {       
     messages[contact] = {
       0: {
         number: 0,
@@ -139,7 +138,6 @@ export function getMessages() {
         is_user_msg: true,   
       }
     }           
-  }
-  console.log(messages);  
+  }   
   return messages;  
 }
