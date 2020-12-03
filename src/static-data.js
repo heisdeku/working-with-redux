@@ -98,45 +98,50 @@ export function getMessages() {
         is_user_msg: true,   
       },
       2: {
-        number: 0,
-        text: "Hello man!",
+        number: 2,
+        text: "You do React?",
         is_user_msg: false,   
       },
       3: {
-        number: 1,
-        text: "Doing great, You?",
+        number: 3,
+        text: "Yeah, any gig for me, would be interesed init",
         is_user_msg: true,   
       },
       4: {
-        number: 0,
-        text: "Hello man!",
+        number: 4,
+        text: "Yes and no somehow, Its one baba alaye that wants to build a social media app. that contacted me for a frontend that he heas built the backend",
         is_user_msg: false,   
       },
       5: {
-        number: 1,
-        text: "Doing great, You?",
+        number: 5,
+        text: "Oh, that's nice. As per baba alaye go pay",
         is_user_msg: true,   
       },
       6: {
-        number: 0,
-        text: "Hello man!",
+        number: 6,
+        text: "True, Guy hope on a call. Let's meet the baba alaye",
         is_user_msg: false,   
       },
       7: {
-        number: 1,
-        text: "Doing great, You?",
+        number: 7,
+        text: "Okay. What's the baba alaye name sef",
         is_user_msg: true,   
       },
       8: {
-        number: 0,
-        text: "Hello man!",
+        number: 8,
+        text: "Mr Kogberegbe",
         is_user_msg: false,   
       },
       9: {
-        number: 1,
-        text: "Doing great, You?",
+        number: 9,
+        text: "On the call already",
         is_user_msg: true,   
-      }
+      },
+      10: {
+        number: 10,
+        text: "Nice",
+        is_user_msg: false,   
+      },
     }           
   }   
   return messages;  
