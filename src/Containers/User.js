@@ -6,6 +6,7 @@ import './User.css'
 const User = ({ user }) => {
   const { name, profile_pic, status} = user;
   function handleUserClick({ user_id}) {
+    console.log(user_id)
     skypeyStore.dispatch(setActiveUserId(user_id))
   }
   return (
