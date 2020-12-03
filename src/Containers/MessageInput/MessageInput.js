@@ -1,13 +1,22 @@
 import skypeyStore from '../../store/skypeyStore'
-import { setTypingValue } from '../../actions/skypey-actions/index'
+import { 
+  setTypingValue,
+  sendMessage
+} from '../../actions/skypey-actions/index'
 import './MessageInput.css'
 
 const MessageInput = ({ value }) => {
-  const handleChange = e => {
+  const state = skypeyStore.getState()
+  const handleSubmit = e => {
+    e.preventDefault()
+    const { typing, activeUserId } = state;
+    skypeyStore.dispatch(sendMessage(typing, activeUserId))
+  }
+  const handleChange = e => {    
     skypeyStore.dispatch(setTypingValue(e.target.value));
   }
   return (
-    <form className="Message">
+    <form className="Message" onSubmit={handleSubmit}>
       <input
         className="Message__input"
         onChange={handleChange}
