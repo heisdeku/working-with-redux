@@ -82,3 +82,64 @@ export function generateUser() {
     user_id: 'H23i-3bNK7'
   }
 }
+
+export function getMessages() {
+  let messages = {}  
+  for (let contact in contacts) {  
+    console.log(contact)  
+    messages[contact] = {
+      0: {
+        number: 0,
+        text: "Hello man!",
+        is_user_msg: false,   
+      },
+      1: {
+        number: 1,
+        text: "Doing great, You?",
+        is_user_msg: true,   
+      },
+      2: {
+        number: 0,
+        text: "Hello man!",
+        is_user_msg: false,   
+      },
+      3: {
+        number: 1,
+        text: "Doing great, You?",
+        is_user_msg: true,   
+      },
+      4: {
+        number: 0,
+        text: "Hello man!",
+        is_user_msg: false,   
+      },
+      5: {
+        number: 1,
+        text: "Doing great, You?",
+        is_user_msg: true,   
+      },
+      6: {
+        number: 0,
+        text: "Hello man!",
+        is_user_msg: false,   
+      },
+      7: {
+        number: 1,
+        text: "Doing great, You?",
+        is_user_msg: true,   
+      },
+      8: {
+        number: 0,
+        text: "Hello man!",
+        is_user_msg: false,   
+      },
+      9: {
+        number: 1,
+        text: "Doing great, You?",
+        is_user_msg: true,   
+      }
+    }           
+  }
+  console.log(messages);  
+  return messages;  
+}
