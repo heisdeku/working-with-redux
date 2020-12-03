@@ -1,13 +1,11 @@
-export default (state, action) => {
-  console.log(action)
-  switch  (action.type) {
-    case 'SET_TECHNOLOGY':
-      return {
-        ...state,
-        tech: action.text
-      };
+import { combineReducers } from 'redux'
 
-    default:
-      return state;
-  }  
-};
+import user from './skypey-reducers/user'
+import contacts from './skypey-reducers/contacts'
+import activeUserId from './skypey-reducers/activeUserId'
+
+export default combineReducers({
+  user,
+  contacts,
+  activeUserId
+});

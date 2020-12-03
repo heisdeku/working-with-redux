@@ -4,14 +4,17 @@ import Main from '../Components/skypey/Main/Main';
 import "./skypey.css";
 
 const Skypey = () => {
-  const { contacts }= skypeyStore.getState();
+  const { contacts, user, activeUserId }= skypeyStore.getState();
   const contactValues = Object.values(contacts)
   return (
     <div className="skypey-app">
       <Sidebar
         contacts={contactValues}
       />
-      <Main />
+      <Main 
+        user={user}
+        activeUserId={activeUserId}
+      />
     </div>
   )
 }

@@ -1,4 +1,4 @@
-import User from './User'
+import User from '../../../Containers/User'
 import './Sidebar.css';
 
 const Sidebar = ({ contacts }) => {

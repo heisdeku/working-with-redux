@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { store } from './store/bankStore'
+//import { store } from './store/bankStore'
 import skypeyStore  from './store/skypeyStore'
 import './index.css';
 import App from './App';

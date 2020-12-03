@@ -72,3 +72,13 @@ export const contacts = {
     user_id: 'iBdU-HD2'
   },
 }
+
+export function generateUser() {
+  return {
+    name: 'Oluwaferanmi Deku',
+    email: "dacodesdev@work.com",
+    profile_pic: photographer,
+    status: 'All day Hustling with the codes, trying to make daily commits for the street. Father of Pack Inc.',
+    user_id: 'H23i-3bNK7'
+  }
+}

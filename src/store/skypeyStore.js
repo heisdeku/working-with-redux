@@ -1,7 +1,6 @@
 import { createStore } from 'redux'
-import { skypeyReducer } from '../reducers/skypeyReducer'
-import { contacts } from '../static-data'
+import reducer from '../reducers/index'
 
-const skypeyStore = createStore(skypeyReducer, { contacts })
+const skypeyStore = createStore(reducer)
 
 export default skypeyStore;
